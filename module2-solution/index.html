@@ -12,14 +12,23 @@
 h1 {
   margin-bottom: 15px;
 }
-p {
+#div1 {
   background-color: grey;
   width: 95%;
   border: 2px solid black;
+  margin-top: 10px;
   float: left;
   padding: 10px;
   font-family: Helvetica;
   color: black;
+}
+
+#insidePan {
+	position: top;
+	float: right;
+	background-color: grey;
+	padding: 2px;
+	border: 2px solid black;
 }
 /* Simple Responsive Framework. */
 
@@ -78,9 +87,11 @@ h1 {
 <h1>Our Menu</h1>
 
 <div>
-  <div class="col-lg-1 col-md-1 col-xs-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
-  <div class="col-lg-2 col-md-2 col-xs-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
-  <div class="col-lg-3 col-md-3 col-xs-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+  <div class="col-lg-1 col-md-1 col-xs-1"><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p id="insidePan">Chicken</p></div></div>
+
+  <div class="col-lg-2 col-md-2 col-xs-1"><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p id="insidePan">Beef</p></div></div>
+
+  <div class="col-lg-3 col-md-3 col-xs-1"><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p id="insidePan">Sushi</p></div></div>
 </div>
 
 </body>
