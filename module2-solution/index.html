@@ -15,7 +15,6 @@ h1 {
 #div1 {
   background-color: grey;
   width: 95%;
-  border: 2px solid black;
   margin-top: 10px;
   float: left;
   padding: 10px;
@@ -24,16 +23,18 @@ h1 {
 }
 
 #insidePan1 {
-	position: top;
+	text-align: center;
 	float: right;
+	width: 30%;
 	background-color: pink;
 	padding: 2px;
 	border: 2px solid black;
 }
 
 #insidePan2 {
-	position: top;
+	text-align: center;
 	float: right;
+	width: 30%;
 	background-color: red;
 	padding: 2px;
 	border: 2px solid black;
@@ -41,8 +42,9 @@ h1 {
 }
 
 #insidePan3 {
-	position: top;
+	text-align: center;
 	float: right;
+	width: 30%;
 	background-color: yellow;
 	padding: 2px;
 	border: 2px solid black;
@@ -52,28 +54,35 @@ h1 {
 /********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3 {
+  	background-color: grey;
+  	border: 2px solid black;
     float: left;
+    margin-right: 10px;
   }
   .col-lg-1 {
-    width: 33.33%;
+    width: 30%;
   }
   .col-lg-2 {
-    width: 33.33%;
+    width: 30%;
   }
   .col-lg-3 {
-    width: 33.33%;
+    width: 30%;
   }
 }
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3 {
+   background-color: grey;
+  	border: 2px solid black;
     float: left;
+    margin-right: 10px;
+    margin-top: 10px;
   }
   .col-md-1 {
-    width: 50%;
+    width: 48%;
   }
   .col-md-2 {
-    width: 50%;
+    width: 48%;
   }
   .col-md-3 {
     width: 100%;
@@ -82,7 +91,10 @@ h1 {
 
 @media (max-width: 767px) {
   .col-xs-1, .col-xs-2, .col-xs-3 {
+  	background-color: grey;
+  	border: 2px solid black;
     float: left;
+    margin-top: 10px;
   }
   .col-xs-1 {
     width: 12;
@@ -104,11 +116,11 @@ h1 {
 <h1>Our Menu</h1>
 
 <div>
-  <div class="col-lg-1 col-md-1 col-xs-1"><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p id="insidePan1">Chicken</p></div></div>
+  <div class="col-lg-1 col-md-1 col-xs-1"><div id="insidePan1">Chicken</div><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div>
 
-  <div class="col-lg-2 col-md-2 col-xs-1"><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p id="insidePan2">Beef</p></div></div>
+  <div class="col-lg-2 col-md-2 col-xs-1"><div id="insidePan2">Beef</div><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div>
 
-  <div class="col-lg-3 col-md-3 col-xs-1"><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p id="insidePan3">Sushi</p></div></div>
+  <div class="col-lg-3 col-md-3 col-xs-1"><div id="insidePan3">Sushi</div><div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div>
 </div>
 
 </body>
